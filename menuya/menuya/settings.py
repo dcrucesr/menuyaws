@@ -76,8 +76,12 @@ WSGI_APPLICATION = 'menuya.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'menuya',
+        'USER': 'menuyaadm',
+        'PASSWORD': 'm3nuy4',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
 
