@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z^d1j-f^n8n9xj&m^3@bbe4)0e-r+y#u7%&-@bc$d*5@aeizp5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['3.23.102.109']
 
 
 # Application definition
@@ -76,14 +76,10 @@ WSGI_APPLICATION = 'menuya.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'menuya',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'mydatabase',
     }
-}
+
 
 
 # Password validation
